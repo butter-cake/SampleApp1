@@ -1,12 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import MyButton from "./MyButton";
+import Profile from "./Profile";
 
 function App() {
+  const user = { name: "bob" };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        {/* <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -15,9 +18,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
-        </a>
+          Hello World
+        </a> */}
       </header>
+      <MyButton user={user} />
+      <Profile />
     </div>
   );
 }
